@@ -74,10 +74,9 @@ WSGI_APPLICATION = "auth_project.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-
 DATABASES = {
     "default": dj_database_url.config(
-        default=os.getenv("DATABASE_URL")
+        default="postgresql://postgres:VtewvRCJDaYKgtrdMQcxwANjhknsfpiS@mainline.proxy.rlwy.net:32773/railway"
     )
 }
 
