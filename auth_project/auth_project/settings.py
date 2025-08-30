@@ -126,4 +126,10 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 LOGIN_URL = '/login/'
 LOGOUT_URL = '/logout/'
 
-CSRF_TRUSTED_ORIGINS = ['https://*']
+# CSRF trusted origins — include deployed host and local development hosts
+CSRF_TRUSTED_ORIGINS = [
+    'https://eve.alimad.hackclub.app',
+    'https://.vercel.app',
+    'http://localhost:8000',
+    'http://127.0.0.1:8000',
+]
