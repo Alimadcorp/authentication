@@ -3,8 +3,7 @@ from cryptography.fernet import Fernet
 from django.shortcuts import render, redirect
 from django.contrib.auth import login
 from django.contrib.auth import get_user_model
-from .forms import ImageLoginForm
-from .forms import RegistrationForm
+from .forms import ImageLoginForm, RegistrationForm
 from .models import HashedImage
 
 User = get_user_model()
