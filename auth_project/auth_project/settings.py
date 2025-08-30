@@ -26,8 +26,8 @@ SECRET_KEY = "django-insecure-7cz&s3%7ozj#xuaw7#hl^k_iop0f6%fcj(y&wve4znv%3lf)s=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', '.alimad.hackclub.app', '.vercel.app', '.hackclub.app']
-
+ALLOWED_HOSTS = ['*', 'eve.alimad.hackclub.app', '.vercel.app']
+# We need to add eve.alimad.hackclub.app to the list of allowed hosts
 # Application definition
 
 INSTALLED_APPS = [
